@@ -2,17 +2,16 @@
 
 ## Contacts
 
-**[Telegram](t.me/@EugeneWebDev)**
+**[Telegram](https://t.me/EugeneWebDev)**
 **[LinkedIn](https://www.linkedin.com/in/evgeniy-nasonov/)**
 
 ## About
 
-I'm Frontend Developer with 3 years commercial experience.
-I create successful websites that are fast, easy to use, and built with best practices.
+I'm Frontend Developer with 3 years commercial experience. 
 I write standards-based code that is semantic, accessible, search-engine friendly, easy to maintain, cross-browser compatible, and performant.
 I have a special interest in use of animation on the web. I particularly like working on websites that have seamless transitions and require high-level performance to maintain a smooth and appealing website.
 
-Now I'm Frontend Developer from Veeam Software. And I've been here for 2 years. My responsibility are to:
+Now I'm Frontend Developer from Veeam Software and my responsibility are to:
 
 * the daily production of Landing pages and HTML emails
 * make regular changes to existing ones
@@ -30,13 +29,23 @@ Now I'm Frontend Developer from Veeam Software. And I've been here for 2 years. 
 * Performance
 * Animation
 * Accessibility & Best Practices
-* Git, Gulp, Yarn, Pug, SCSS, BEM
+* Git, Webpack/Gulp, Yarn, Pug, SCSS, BEM
+
+## Code examples
+
+1. **[Natours-Project](https://github.com/EugeneJT/Natours-Project)**
+    * HTML, SCSS, BEM, CSS-animations 
+2. **[Taskmanager](https://github.com/EugeneJT/569511-taskmanager-12)**
+    * SPA(MVP) - JavaScript (ES6+), Webpack, REST API
+3. **[Cinema](https://github.com/EugeneJT/569511-cinemaddict-12)**
+    * SPA(MVP) - JavaScript (ES6+), Webpack, REST API
+
 
 ## Experience
 
 * Veeam Software
     * Frontend Developer
-    * Jan. 2021 – Present
+    * Aug. 2019 – Present
 
 * Freelance
     * Web Developer
@@ -51,3 +60,9 @@ Now I'm Frontend Developer from Veeam Software. And I've been here for 2 years. 
     * Web Development (PHP, JavaScript)
 * 2016 Saint-Petersburg State Forestry University
     * Chemical Technology
+
+
+## English level B1
+
+I've been working for an international company for 2 years. 
+And I have daily chatting with colleagues from different countries.
