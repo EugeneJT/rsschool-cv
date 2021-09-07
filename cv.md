@@ -33,6 +33,11 @@ Now I'm Frontend Developer from Veeam Software and my responsibility are to:
 
 ## Code examples
 
+```javascript
+const { log } = console;
+log('Hello, world!');
+```
+
 1. **[Natours-Project](https://github.com/EugeneJT/Natours-Project)**
     * HTML, SCSS, BEM, CSS-animations 
 2. **[Taskmanager](https://github.com/EugeneJT/569511-taskmanager-12)**
