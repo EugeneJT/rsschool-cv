@@ -1,0 +1,18 @@
+@keyframes noTransform {
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.title-animation {
+  @include animate(noTransform, 1s);
+  opacity: 0;
+  transform: translateY(-4rem) scale(.8);
+
+  @for $i from 1 through 4 {
+    &--#{$i} {
+      animation-delay: 1s + $i/5;
+    }
+  }
+}

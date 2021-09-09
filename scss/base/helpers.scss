@@ -1,0 +1,87 @@
+/* Media queries */
+
+$extra-big-tablet-width: 1280px;
+$big-tablet-width: 1024px;
+$tablet-width: 768px;
+$mob-width: 480px;
+$mob-mini-width: 370px;
+
+/* Colors */
+
+$color-white: #ffffff;
+$color-black: #000000;
+$color-text-primary: #3d3d3d;
+
+$color-text-button-light: #04b266;
+$color-text-button-light-hover: #038049;
+$color-bg-button-light: #f4f2f2;
+$color-bg-button-light-hover: #e8e4e4;
+
+$color-text-button-transparent: #04b266;
+$color-text-button-transparent-hover: #038049;
+
+$color-text-header-title: #444;
+$color-text-header-subtitle: #909090;
+
+$color-text-footer-nav: #6d6d6d;
+$color-text-footer-nav-hover: #20bd57;
+
+$color-bg-nav: #f5f7f8;
+$color-bg-menu: #e6ebee;
+
+$color-bg-burger: #cdcdcd;
+$color-bg-burger-item: #232323;
+
+$color-text-site-menu-link: #363636;
+
+$color-bg-user-menu: #e6ebee;
+$color-bg-user-menu-arrow: #edf2ef;
+
+$color-lang-separator: #dee5e8;
+
+$title-sizes: (
+        xxs: (
+                desktop: 20px,
+                big-laptop: 16px),
+        xs: (
+                desktop: 24px, 
+                tablet: 20px,
+                mobile: 18px),
+        s: (
+                desktop: 28px,
+                tablet: 24px,
+                mobile: 22px),
+        m: (
+                desktop: 41px,
+                tablet: 32px,
+                mobile: 28px),
+        l: (
+                desktop: 50px,
+                tablet: 52px,
+                mobile: 36px),
+        xl: (
+                desktop: 65px,
+                laptop: 57px,
+                tablet: 50px,
+                mobile: 41px),
+);
+
+$push-sizes: (
+        xxs: (
+                desktop: 16px),
+        xs: (
+                desktop: 20px),
+        s: (
+                desktop: 24px),
+        m: (
+                desktop: 32px,
+                mobile: 24px),
+        l: (
+                desktop: 48px,
+                tablet: 40px,
+                mobile: 32px),
+        xl: (
+                desktop: 60px,
+                tablet: 52px,
+                mobile: 40px),
+);

@@ -1,0 +1,51 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: $color-text-primary;
+    overflow-x: hidden;
+}  
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+  
+.push {
+    @each $name, $size in $push-sizes {
+      &-size-#{$name}:not(:last-child) {
+        @each $screen, $value in $size {
+          @if $screen == 'desktop' {
+            margin-bottom: $value;
+          }
+
+          @include tablet-down {
+            @if $screen == 'tablet' {
+              margin-bottom: $value;
+            }
+          }
+
+          @include mob-down {
+            @if $screen == 'mobile' {
+              margin-bottom: $value;
+            }
+          }
+        }
+      }
+    }
+}
+  

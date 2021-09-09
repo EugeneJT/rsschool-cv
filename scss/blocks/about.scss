@@ -1,0 +1,45 @@
+.about {
+    padding: 80px 0;
+    position: relative;
+}
+
+.story {
+    &__item {
+        width: 75%;
+        margin: 0 auto;
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        background-color: rgba($color-white, .6);
+        border-radius: 3px;
+        padding: 6rem;
+        padding-left: 9rem;
+        font-size: 16px;
+        transform: skewX(-12deg);
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+        }
+    
+        @include big-tablet-down {
+            width: 84%;
+            padding: 4rem;
+            padding-left: 6rem;
+        }
+        @include tablet-down {
+            transform: skewX(0);
+            padding: 3rem;
+        }
+
+        @include mob-down {
+            padding: 2rem;
+        }
+    }
+    
+    &__text {
+        color: #777;
+        transform: skewX(12deg);
+
+        @include tablet-down {
+            transform: skewX(0);
+        }
+    }
+}
