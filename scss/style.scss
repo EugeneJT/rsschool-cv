@@ -9,6 +9,7 @@
 @import 'blocks/bg-video';
 @import 'blocks/about';
 @import 'blocks/list';
+@import 'blocks/skills';
 
 
 
@@ -70,3 +71,20 @@
 .align-center {
     text-align: center;
 }
+
+.division {
+    margin: 80px 0;
+
+    &__background {
+
+        &--grey {
+            padding: 80px 0;
+            background:  #F1F1F1;
+            
+            @include mob-down {
+                padding: 50px 15px;
+            }
+        }
+    }
+}
+
