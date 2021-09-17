@@ -11,6 +11,27 @@
     <link href="./scss/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+        <label for="navi-toggle" class="navigation__button">
+            <span class="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div class="navigation__background">&nbsp;</div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>About</a></li>
+                <li class="navigation__item"><a href="#skills" class="navigation__link"><span>02</span>Skills</a></li>
+                <li class="navigation__item"><a href="#exemples" class="navigation__link"><span>03</span>Code examples</a></li>
+                <li class="navigation__item"><a href="#experience" class="navigation__link"><span>04</span>Experience</a></li>
+                <li class="navigation__item"><a href="#education" class="navigation__link"><span>05</span>Education</a></li>
+                <li class="navigation__item"><a href="#languages" class="navigation__link"><span>06</span>English level</a></li>
+
+                </ul>
+        </nav>
+    </div>
     <div class="parallax">
         <div class="general-wrapper">
             <header class="header parallax__group">
@@ -36,7 +57,7 @@
                 </div>
             </header>
             <main class="main">
-                <section class="about">
+                <section class="about" id="about">
                     <div class="bg-video">
                         <video class="bg-video__content" autoplay="" muted="" loop="">
                             <source src="images/video.mp4" type="video/mp4">
@@ -96,7 +117,7 @@
                         </div>
                 </section>
 
-                <section class="division">
+                <section class="division" id="skills">
                     <h2 class="heading-secondary align-center push-size-m">
                         Skills
                     </h2>
@@ -155,7 +176,7 @@
                         </li>
                     </ul>
                 </section>
-                <section class="exemples">
+                <section class="exemples" id="exemples">
                     <h2 class="heading-secondary align-center push-size-m">
                         Code examples
                     </h2>
@@ -189,62 +210,106 @@
                     </div>
                 </section>
                 
-                <section class="experience">
-                    <h2 class="experience__title">Experience</h2>
-                    <ul>
-                        <li>
-                            Veeam Software
-                            <ul>
-                                <li>Frontend Developer</li>
-                                <li>Aug.&nbsp;2019&nbsp;– Present</li>
-                            </ul>
-                        </li>
-                        <li>
-                            Freelance
-                            <ul>
-                                <li>Web Developer</li>
-                                <li>Oct.&nbsp;2018&nbsp;– Jul.&nbsp;2019</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <section class="experience" id="experience">
+                    <div class="timetable">
+                        <h2 class="heading-secondary align-center push-size-m">
+                            Experience
+                        </h2>
+                        <div class="timetable__block">
+                          <div class="timetable__wrap">
+                            <div class="timetable__item flex">
+                              <div class="timetable__date">Aug.&nbsp;2019&nbsp;– Present</div>
+                              <div class="timetable__text">
+                                <div class="timetable__title">Veeam Software</div>
+                                <p class="title-size-xs">Frontend Developer</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timetable__block">
+                          <div class="timetable__wrap">
+                            <div class="timetable__item flex">
+                              <div class="timetable__date">Oct.&nbsp;2018&nbsp;– Jul.&nbsp;2019</div>
+                              <div class="timetable__text">
+                                <div class="timetable__title">Freelance</div>
+                                <p class="title-size-xs">Web Developer</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </section>
-                <section class="education">
-                    <h2 class="education__title">Education</h2>
-                    <ul>
-                        <li>
-                            2020 HTML Academy
-                            <ul>
-                                <li>JavaScript. Architecture of&nbsp;Front&#8209;end Applications</li>
-                                <li>JavaScript. Professional Development of&nbsp;Web Interfaces</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2018 ITMO University
-                            <ul>
-                                <li>Web Development (PHP, JavaScript)</li>
-                            </ul>
-                        </li>
-                        <li>
-                            2016 Saint&#8209;Petersburg State Forestry University
-                            <ul>
-                                <li>Chemical Technology</li>
-                            </ul>
-                        </li>
-                    </ul>
+                <section class="education" id="education">
+                    <h2 class="heading-secondary align-center push-size-m">
+                        Education
+                    </h2>
+                    <div class="timetable">
+
+                        <div class="timetable__block">
+                          <div class="timetable__wrap">
+                            <div class="timetable__item flex">
+                              <div class="timetable__date">2020</div>
+                              <div class="timetable__text">
+                                <div class="timetable__title">HTML Academy</div>
+                                <p class="title-size-xs">JavaScript. Architecture of&nbsp;Front&#8209;end Applications</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timetable__block">
+                          <div class="timetable__wrap">
+                            <div class="timetable__item flex">
+                              <div class="timetable__date">2020</div>
+                              <div class="timetable__text">
+                                <div class="timetable__title">HTML Academy</div>
+                                <p class="title-size-xs">JavaScript. Professional Development of&nbsp;Web Interfaces</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="timetable__block">
+                            <div class="timetable__wrap">
+                              <div class="timetable__item flex">
+                                <div class="timetable__date">2018</div>
+                                <div class="timetable__text">
+                                  <div class="timetable__title">ITMO University</div>
+                                  <p class="title-size-xs">Web Development (PHP, JavaScript)</p>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="timetable__block">
+                            <div class="timetable__wrap">
+                              <div class="timetable__item flex">
+                                <div class="timetable__date">2016</div>
+                                <div class="timetable__text">
+                                  <div class="timetable__title">Saint&#8209;Petersburg State Forestry University</div>
+                                  <p class="title-size-xs">Chemical Technology</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
                 </section>
-                <section class="languages">
-                    <h2 class="languages__title">English level B1</h2>
-                    <p>
+                <section class="languages" id="languages">
+                    <h2 class="heading-secondary align-center push-size-m">
+                        English level B1
+                    </h2>
+                    <p class="title-size-s align-center">
                         I've been working for&nbsp;an&nbsp;international company for&nbsp;2&nbsp;years. <br>
                         And&nbsp;I have daily chatting with&nbsp;colleagues from&nbsp;different countries.
                     </p>
                 </section>
             </main>
             <footer class="footer">
-                <a href="https://rs.school/js/" target="_blank" rel="noopener"><img src="https://rs.school/images/rs_school_js.svg" alt="RS Logo" width="195" height="70"></a>
+                <div class="footer__item">
+                    <a href="https://rs.school/js/" target="_blank" rel="noopener"><img src="https://rs.school/images/rs_school_js.svg" alt="RS Logo" width="195" height="70"></a>
+                </div>
+                <div class="footer__item">
+                    <p class="title-size-xxs">2021 Evgeny Nasonov</p> 
+                </div>
             </footer>
         </div>
     </div>
-
 </body>
 </html>

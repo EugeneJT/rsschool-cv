@@ -3,6 +3,7 @@
 @import 'base/typography';
 @import 'base/animations';
 @import 'base/base';
+@import 'layout/navigation';
 @import 'layout/header';
 @import 'layout/footer';
 @import 'blocks/user';
@@ -10,6 +11,9 @@
 @import 'blocks/about';
 @import 'blocks/list';
 @import 'blocks/skills';
+@import 'blocks/timetable';
+@import 'blocks/exemples';
+
 
 
 
@@ -88,79 +92,11 @@
     }
 }
 
-.exemples {
-    padding: 10rem 0;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../images/nat-4.jpg);
-    background-size: cover;
-    transform: skewY(-7deg);
-
-    & > * {
-        transform: skewY(7deg);
-    }
-
-    @include tablet-down {
-        padding: 10rem 0;
-    }
-
-    &__wrap {
-        margin-top: 50px;
-        display: flex;
-        justify-content: center;
-        padding: 0 15px;
-
-        @include big-tablet-down {
-            flex-wrap: wrap;
-        }
-    }
-    
-    .heading-secondary {
-        background-image: linear-gradient(to right, #fff, #f1f1f1);
-    }
-    .btn-text:link {
-        font-size: 16px;
-    }
+.experience {
+    margin: 90px 0 40px;
 }
 
-.exemples-box {
-    max-width: 310px;
-    margin: 0 25px;
-    color: #777;
-    background-color: rgba($color-white, .7);
-    padding: 2.5rem 1.5rem;
-    text-align: center;
-    border-radius: 3px;
-    box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
-    transition: transform .3s;
-
-    @include tablet-down {
-        padding: 2rem;
-    }
-
-    &:not(:last-child) {
-        @include big-tablet-down {
-            margin-bottom: 50px;
-
-        }
-    }
-
-    &__icon {
-        font-size: 6rem;
-        margin-bottom: .5rem;
-        display: inline-block;
-        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-        -webkit-background-clip: text;
-        color: transparent;
-
-        @include tablet-down {
-            margin-bottom: 0;
-        }
-    }
-
-    &:hover {
-        transform: translateY(-1.5rem) scale(1.03);
-    }
+.education {
+    margin-bottom: 80px;
 }
+  

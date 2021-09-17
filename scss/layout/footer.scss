@@ -1,0 +1,24 @@
+
+.footer {
+    margin-top: 80px;
+    box-sizing: border-box;
+    padding: 30px 15px;
+    color: #999;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include mob-down {
+        flex-direction: column;
+    }
+
+    &__item {
+        &:first-child {
+            @include mob-down {
+                order: 1;
+                margin-top: 20px;
+            }
+        }
+    }
+}
