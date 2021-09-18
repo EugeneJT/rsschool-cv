@@ -19,11 +19,11 @@
     &__block {
       padding-top: 32px;
       padding-bottom: 32px;
-      background: #F1F1F1;
+      background: $color-grey-light;
     }
   
     &__block:nth-child(odd) {
-      background: #fff;
+      background: $color-white;
     }
   
     &__item {
@@ -92,7 +92,7 @@
     &__english {
       font-size: 16px;
       font-style: italic;
-      color: #999;
+      color: $color-grey-dark-3;
     }
   
     @media screen and (max-width: 960px) {
@@ -124,7 +124,7 @@
         font-weight: 500;
       }
     }
-    @media screen and (max-width: 480px) {
+    @include mob-down {
       .timetable__block {
         padding: 20px 10px;
       }

@@ -47,29 +47,6 @@
   }
 }
 
-@mixin ie-only {
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    @content;
-  }
-}
-
-@mixin pseudo {
-  content: '';
-  position: absolute;
-}
-
-
-@mixin margin-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@mixin margin-b($margin) {
-  &:not(:last-child) {
-    margin-bottom: $margin;
-  }
-}
-
 @mixin setLineHeight($size) {
   font-size: $size;
   line-height: $size + 8;

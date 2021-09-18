@@ -35,7 +35,7 @@
     }
     
     &__text {
-        color: #777;
+        color: $color-grey-dark;
         transform: skewX(12deg);
 
         @include tablet-down {

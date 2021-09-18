@@ -4,7 +4,7 @@
         to right bottom,
         rgba($color-primary-light, 0.8),
         rgba($color-primary-dark, 0.8)),
-    url(../images/nat-4.jpg);
+    url(../assets/images/nature.jpg);
     background-size: cover;
     transform: skewY(-7deg);
 
@@ -28,7 +28,7 @@
     }
     
     .heading-secondary {
-        background-image: linear-gradient(to right, #fff, #f1f1f1);
+        background-image: linear-gradient(to right, $color-white, $color-grey-light);
     }
     .btn-text:link {
         font-size: 16px;
@@ -57,11 +57,11 @@
 
     &__highlight {
         &--built-in {
-            color: #397300;
+            color: $color-code-built-in;
         }
 
         &--string {
-            color: #880000;
+            color: $color-code-string;
         }
     }
 }
@@ -69,7 +69,7 @@
 .exemples-box {
     max-width: 310px;
     margin: 0 25px;
-    color: #777;
+    color: $color-grey-dark;
     background-color: rgba($color-white, .7);
     padding: 2.5rem 1.5rem;
     text-align: center;

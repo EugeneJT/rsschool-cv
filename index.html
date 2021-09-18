@@ -5,22 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link href="./scss/style.css" rel="stylesheet" type="text/css">
-    <script defer  src="./js/script.js"></script>
+    <link href="./scss/style.min.css" rel="stylesheet">
+    <script defer src="./js/script.min.js"></script>
 </head>
 <body>
     <div class="navigation" id="navigation">
         <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
-
         <label for="navi-toggle" class="navigation__button">
             <span class="navigation__icon">&nbsp;</span>
         </label>
-
         <div class="navigation__background">&nbsp;</div>
-
         <nav class="navigation__nav">
             <ul class="navigation__list">
                 <li class="navigation__item"><a href="#about" class="navigation__link"><span>01</span>About</a></li>
@@ -29,8 +23,7 @@
                 <li class="navigation__item"><a href="#experience" class="navigation__link"><span>04</span>Experience</a></li>
                 <li class="navigation__item"><a href="#education" class="navigation__link"><span>05</span>Education</a></li>
                 <li class="navigation__item"><a href="#languages" class="navigation__link"><span>06</span>English level</a></li>
-
-                </ul>
+            </ul>
         </nav>
     </div>
     <div class="parallax">
@@ -39,12 +32,14 @@
                 <div class="user push-size-m title-animation title-animation--1">
                     <a href="https://github.com/EugeneJT/" target="_blank" rel="noopener">
                         <figure class="user__shape">
-                            <img src="./images/photo_2x.jpg" alt="Person on a tour" class="user__img">
+                            <picture>
+                                <source type="image/webp" srcset="./assets/images/photo_1x.webp 1x, ./assets/images/photo_2x.webp 2x">
+                                <img class="user__img" src="./assets/images/photo_1x.jpg" srcset="./assets/images/photo_2x.jpg" width="288" height="288" alt="" >
+                            </picture>
                             <figcaption class="user__caption">GitHub</figcaption>
                         </figure>
                     </a>
                 </div>
-
                 <h1 class="header__title title-size-xl push-size-m title-animation title-animation--2">
                     Hi, I'm<span class="highlight" >Eugene</span>, <br> I'm a&nbsp;Frontend Developer. 
                 </h1>
@@ -61,118 +56,115 @@
                 <section class="about" id="about">
                     <div class="bg-video">
                         <video class="bg-video__content" autoplay="" muted="" loop="">
-                            <source src="images/video.mp4" type="video/mp4">
-                            <source src="img/video.webm" type="video/webm">
+                            <source src="./assets/videos/video.mp4" type="video/mp4">
+                            <source src="./assets/videos/video.webm" type="video/webm">
                             Your browser is not supported!
                         </video>
                     </div>
-    
-                        <h2 class="heading-secondary align-center push-size-m">
-                            About
-                        </h2>
-                    
-                        <div class="story">
-                            <div class="story__item">
-                                <div class="story__text">
-                                    <p class="title-size-xxs push-size-xxs">
-                                        I'm a Frontend Developer<span class="highlight">with&nbsp;3&nbsp;years</span> of&nbsp;commercial experience.
-                                    </p>
-                                    <p class="title-size-xxs push-size-xxs">
-                                        I write standards&#8209;based code that is semantic, accessible, search&#8209;engine friendly, easy to&nbsp;maintain, cross&#8209;browser compatible, and&nbsp;performant. 
-                                    </p>
-                                    <p class="title-size-xxs push-size-xxs">
-                                        I&nbsp;have a&nbsp;special interest in&nbsp;use of&nbsp;animation on&nbsp;the&nbsp;web. I&nbsp;particularly like working on&nbsp;websites that have seamless transitions and&nbsp;require high&#8209;level performance to&nbsp;maintain a&nbsp;smooth and&nbsp;appealing website.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="story__item">
-                                <div class="story__text">
-                                    <p class="title-size-xxs push-size-xxs">
-                                        Now I'm Frontend Developer from<a class="highlight" href="https://www.veeam.com/" target="_blank" rel="noopener">Veeam Software</a>and&nbsp;my responsibility are to:
-                                    </p>
-                                    <ol class="list">
-                                        <li class="list__item">
-                                            <p class="list__text">the daily production of&nbsp;Landing pages and&nbsp;HTML emails</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">make regular changes to&nbsp;existing ones</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">uphold quality layout according to&nbsp;corporate guidelines</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">make recommendations to&nbsp;optimize and&nbsp;streamline their HTML templates</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">work collaboratively with&nbsp;other developers/designers</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">maintaining and&nbsp;promoting a&nbsp;successful and&nbsp;positive work environment</p>
-                                        </li>
-                                        <li class="list__item">
-                                            <p class="list__text">research and&nbsp;implements new&nbsp;tools and&nbsp;technologies</p>
-                                        </li>
-                                    </ol>
-                                </div>
+                    <h2 class="heading-secondary align-center push-size-m">
+                        About
+                    </h2>
+                    <div class="story">
+                        <div class="story__item">
+                            <div class="story__text">
+                                <p class="title-size-xxs push-size-xxs">
+                                    I'm a Frontend Developer<span class="highlight">with&nbsp;3&nbsp;years</span> of&nbsp;commercial experience.
+                                </p>
+                                <p class="title-size-xxs push-size-xxs">
+                                    I write standards&#8209;based code that is semantic, accessible, search&#8209;engine friendly, easy to&nbsp;maintain, cross&#8209;browser compatible, and&nbsp;performant. 
+                                </p>
+                                <p class="title-size-xxs push-size-xxs">
+                                    I&nbsp;have a&nbsp;special interest in&nbsp;use of&nbsp;animation on&nbsp;the&nbsp;web. I&nbsp;particularly like working on&nbsp;websites that have seamless transitions and&nbsp;require high&#8209;level performance to&nbsp;maintain a&nbsp;smooth and&nbsp;appealing website.
+                                </p>
                             </div>
                         </div>
+                        <div class="story__item">
+                            <div class="story__text">
+                                <p class="title-size-xxs push-size-xxs">
+                                    Now I'm Frontend Developer from<a class="highlight" href="https://www.veeam.com/" target="_blank" rel="noopener">Veeam Software</a>and&nbsp;my responsibility are to:
+                                </p>
+                                <ol class="list">
+                                    <li class="list__item">
+                                        <p class="list__text">the daily production of&nbsp;Landing pages and&nbsp;HTML emails</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">make regular changes to&nbsp;existing ones</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">uphold quality layout according to&nbsp;corporate guidelines</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">make recommendations to&nbsp;optimize and&nbsp;streamline their HTML templates</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">work collaboratively with&nbsp;other developers/designers</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">maintaining and&nbsp;promoting a&nbsp;successful and&nbsp;positive work environment</p>
+                                    </li>
+                                    <li class="list__item">
+                                        <p class="list__text">research and&nbsp;implements new&nbsp;tools and&nbsp;technologies</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
                 </section>
-
                 <section class="division" id="skills">
                     <h2 class="heading-secondary align-center push-size-m">
                         Skills
                     </h2>
                     <ul class="skills">
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/html.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/html.png" alt="" width="70" height="70">
                             Semantic HTML
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/css.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/css.png" alt="" width="70" height="70">
                             Responsive CSS
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/js.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/js.png" alt="" width="70" height="70">
                             JavaScript
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/performance.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/performance.png" alt="" width="70" height="70">
                             Performance
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/animation.jpg" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/animation.png" alt="" width="70" height="70">
                             Animation
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/axe.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/axe.png" alt="" width="70" height="70">
                             Accessibility &&nbsp;Best Practices
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/git.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/git.png" alt="" width="70" height="70">
                             Git
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/webpack.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/webpack.png" alt="" width="70" height="70">
                             Webpack
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/gulp.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/gulp.png" alt="" width="70" height="70">
                             Gulp
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/yarn.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/yarn.png" alt="" width="70" height="70">
                             Yarn
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/pug.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/pug.png" alt="" width="70" height="70">
                             Pug
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/scss.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/scss.png" alt="" width="70" height="70">
                             SCSS
                         </li>
                         <li class="skills__item">
-                            <img class="skills__img" src="./images/icons/bem.png" alt="" width="70" height="70">
+                            <img class="skills__img" src="./assets/icons/bem.png" alt="" width="70" height="70">
                             BEM
                         </li>
                     </ul>
@@ -190,30 +182,24 @@
                             <p class="exemples-box__text push-size-xs">
                                 HTML, SCSS, BEM, CSS&#8209;animations
                             </p>
-                            <a class="btn-text" href="https://github.com/EugeneJT/Natours-Project" target="_blank">Learn more →</a>
+                            <a class="btn-text" href="https://github.com/EugeneJT/Natours-Project" target="_blank" rel="noopener">Learn more →</a>
                         </div>
-
-
                         <div class="exemples-box">
                             <h3 class="title-size-xxs push-size-xxs">Taskmanager</h3>
                             <p class="exemples-box__text push-size-xs">
                                 SPA(MVP) <br> JavaScript (ES6+), Webpack, REST API
                             </p>
-                            <a class="btn-text" href="https://github.com/EugeneJT/569511-taskmanager-12" target="_blank">Learn more →</a>
-
+                            <a class="btn-text" href="https://github.com/EugeneJT/569511-taskmanager-12" target="_blank" rel="noopener">Learn more →</a>
                         </div>
-
                         <div class="exemples-box">
                             <h3 class="title-size-xxs push-size-xxs">Cinema</h3>
                             <p class="exemples-box__text push-size-xs">
                                 SPA(MVP) <br> JavaScript (ES6+), Webpack, REST API
                             </p>
-                            <a class="btn-text" href="https://github.com/EugeneJT/569511-cinemaddict-12" target="_blank">Learn more →</a>
-
+                            <a class="btn-text" href="https://github.com/EugeneJT/569511-cinemaddict-12" target="_blank" rel="noopener">Learn more →</a>
                         </div>
                     </div>
                 </section>
-                
                 <section class="experience" id="experience">
                     <div class="timetable">
                         <h2 class="heading-secondary align-center push-size-m">
@@ -248,7 +234,6 @@
                         Education
                     </h2>
                     <div class="timetable">
-
                         <div class="timetable__block">
                           <div class="timetable__wrap">
                             <div class="timetable__item flex">
@@ -292,7 +277,7 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
+                        </div>
                     </div>
                 </section>
                 <section class="languages" id="languages">
