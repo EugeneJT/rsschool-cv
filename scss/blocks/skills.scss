@@ -2,15 +2,23 @@
     display: flex;
     justify-content:space-evenly;
     flex-wrap: wrap;
+    cursor: pointer;
+    max-width: 1230px;
+    margin: auto;
 
     &__item {
         display: flex;
         align-items: center;
         flex-basis: 235px;
         padding: 0 10px;
+        transition: all .3s;
 
         &:not(:last-child) {
             margin-bottom: 30px;
+        }
+
+        &:hover {
+            transform: scale(1.1);
         }
     }
 

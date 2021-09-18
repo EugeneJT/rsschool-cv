@@ -33,6 +33,37 @@
     .btn-text:link {
         font-size: 16px;
     }
+
+    &__code {
+        display: block;
+        max-width: 310px;
+        margin: auto;
+        white-space: pre-line;
+        text-align: center;
+        overflow-x: auto;
+        padding: .5em;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+        background-color: rgba(255, 255, 255, 0.7);
+        transition: all .3s;
+
+        &:hover {
+            transform: scale(1.1) skewY(7deg);
+        }
+
+        @include mob-down {
+            max-width: initial;
+        }
+    }
+
+    &__highlight {
+        &--built-in {
+            color: #397300;
+        }
+
+        &--string {
+            color: #880000;
+        }
+    }
 }
 
 .exemples-box {
